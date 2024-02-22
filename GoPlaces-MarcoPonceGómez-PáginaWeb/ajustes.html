@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes - GoPlaces</title>
+    <link rel="stylesheet" type="text/css" href="style-ajustes.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="menu container">
+                <a href="principal.html" class="logo">GoPlaces-AJUSTES</a>
+                <input type="checkbox" id="menu" />
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="principal.html">Inicio</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="anadir.html">Añadir</a></li>
+                        <li><a href="consultar.html">Consultar</a></li>
+                        <li><a href="#" id="logout">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="ajustes-container">
+            <h2>Ajustes</h2>
+            <form id="change-password-form">
+                <label for="current-password">Contraseña actual:</label>
+                <input type="password" id="current-password" name="current-password" required><br><br>
+
+                <label for="new-password">Nueva contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required><br><br>
+
+                <input type="submit" value="Cambiar Contraseña">
+            </form>
+
+            <form id="change-theme-form">
+                <label for="theme">Cambiar Tema:</label>
+                <select id="theme" name="theme" required>
+                    <option value="light">Claro</option>
+                    <option value="dark">Oscuro</option>
+                </select><br><br>
+
+                <input type="submit" value="Cambiar Tema">
+            </form>
+
+            <form id="change-language-form">
+                <label for="language">Cambiar Idioma:</label>
+                <select id="language" name="language" required>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select><br><br>
+
+                <input type="submit" value="Cambiar Idioma">
+            </form>
+
+            <button id="delete-account">Eliminar Cuenta</button>
+        </div>
+    </div>
+
+    <script>
+        // Aquí puedes agregar scripts para manejar las acciones, como cambiar la contraseña, tema, idioma, etc.
+        document.getElementById('logout').addEventListener('click', function() {
+            // Agregar lógica para cerrar sesión
+            alert('Sesión cerrada');
+        });
+
+        document.getElementById('delete-account').addEventListener('click', function() {
+            // Agregar lógica para eliminar la cuenta
+            var confirmDelete = confirm('¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no se puede deshacer.');
+            if (confirmDelete) {
+                alert('Cuenta eliminada');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #09031D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    color: #0000;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    color: #0000;
+}
+
+.menu .navbar ul li a:hover {
+    color: #09031D;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    float: left;
+}
+
+.menu-label {
+    cursor: pointer;
+    display: none;
+}
+
+.header {
+    background-color: #678DEB;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    text-align: center;
+    padding: 190px;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #fffdfc;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #fffdfc;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.formulario {
+    max-width: 800px;
+    width: 80%;
+    padding: 40px;
+    border: 1px solid #09031D;
+    border-radius: 5px;
+    background-color: #678DEB;
+    margin: 40px auto;
+}
+
+.formulario label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #09031D;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #09031D;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #09031D;
+    color: white;
+    cursor: pointer;
+}
+
+.resultado {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #09031D;
+    border-radius: 5px;
+    background-color: #678DEB;
+    text-align: center;
+}
+
+.resultado h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #09031D;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    font-size: 18px;
+    color: #09031D;
+    margin-bottom: 10px;
+}

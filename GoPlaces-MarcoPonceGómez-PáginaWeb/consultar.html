@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Consultar-GoPlaces</title>
+    <link rel="stylesheet" type="text/css" href="style-consultar.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<header class="header">
+    <div class="menu container">
+        <a href="principal.html" class="logo">GoPlaces-CONSULTAR</a>
+        <input type="checkbox" id="menu" />
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="anadir.html">Añadir</a></li>
+                <li><a href="ajustes.html">Ajustes</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="formulario">
+        <form id="search-form">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" style="font-weight: bold;" required><br><br>
+
+            <label for="sitio">Sitio:</label>
+            <select id="sitio" name="sitio" required>
+                <option value="">Seleccionar</option>
+                <option value="museo" style="font-weight: bold;">Museo</option>
+                <option value="monumento" style="font-weight: bold;">Monumento</option>
+                <option value="hotel" style="font-weight: bold;">Hotel</option>
+                <option value="restaurante" style="font-weight: bold;">Restaurante</option>
+            </select><br><br>
+
+            <label for="nombre">Nombre del sitio:</label>
+            <input type="text" id="nombre" style="font-weight: bold;" name="nombre" required><br><br>
+
+            <input type="submit" style="font-weight: bold;" value="Buscar">
+        </form>
+    </div>
+    <div class="resultado" id="result-container">
+        <h3>Resultados de la búsqueda:</h3>
+        </br>
+        <p id="result-ciudad"> AQUÍ VA EL RESULTADO CIUDAD</p>
+        <p id="result-nombre"> AQUÍ VA EL RESULTADO NOMBRE</p>
+        <p id="result-sitio"> AQUÍ VA EL RESULTADO SITIO</p>
+        </br>
+        </br>
+        <p id="result-ciudad"> AQUÍ VA EL RESULTADO CIUDAD</p>
+        <p id="result-nombre"> AQUÍ VA EL RESULTADO NOMBRE</p>
+        <p id="result-sitio"> AQUÍ VA EL RESULTADO SITIO</p>
+        </br>
+    </div>
+
+
+</body>
+
+</html>
